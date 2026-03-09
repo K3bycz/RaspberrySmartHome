@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="dashboard-container">
-   <p style="text-align: center;">Working Progress, programista musi napić się kawy</p>
+   <p style="text-align: center;">TEST</p>
 </div>
 
 @push('styles')
