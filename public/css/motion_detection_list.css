@@ -1,0 +1,98 @@
+    .filter-card {
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn-period {
+        margin-right: 4px;
+        margin-bottom: 4px;
+    }
+
+    .chart-container {
+        position: relative;
+        height: 220px;
+        margin-bottom: 12px;
+    }
+
+    .table th {
+        font-size: 0.85rem;
+        color: #555;
+    }
+
+    .status-ok {
+        color: green;
+        font-weight: 500;
+    }
+
+    .status-error {
+        color: red;
+        font-weight: 500;
+    }
+
+    .no-data {
+        text-align: center;
+        color: #aaa;
+        padding: 20px 0;
+        font-style: italic;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .col-md-6:first-child {
+        padding-left: 0;
+    }
+
+    .col-md-6:last-child {
+        padding-right: 0;
+    }
+
+    .pagination .page-link {
+        color: #C31C4A;
+        border-color: #dee2e6;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #C31C4A;
+        border-color: #C31C4A;
+        color: #fff;
+    }
+
+    .pagination .page-link:hover {
+        color: #a01540;
+        background-color: #f8d7df;
+        border-color: #dee2e6;
+    }
+
+    .pagination .page-item.disabled .page-link {
+        color: #aaa;
+    }
+
+    .table thead th:nth-child(1),
+    #dist-tbody td:nth-child(1) {
+        width: 30%;
+    }
+
+    .table thead th:nth-child(2),
+    #dist-tbody td:nth-child(2) {
+        width: 40%;
+        text-align: center;
+    }
+
+    .table thead th:nth-child(2) {
+        text-align: center;
+    }
+
+    .table thead th:nth-child(3),
+    #dist-tbody td:nth-child(3) {
+        width: 30%;
+        text-align: center;
+    }

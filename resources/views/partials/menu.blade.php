@@ -7,13 +7,19 @@
     </li>
     <h6> Listy </h6>
     <li class="p-2">
-        <a href="/sensors/list" class="align-items-center text-decoration-none menu-option">
-            <span class="ms-2"><i class="fa-solid fa-temperature-half"></i></span> Temperatura i wilgotność
+        <a href="/sensors/temperature/list" class="align-items-center text-decoration-none menu-option">
+            <span class="ms-2"><i class="fa-solid fa-temperature-half"></i></span> Warunki wewnętrzne
         </a>
     </li>
-    <!-- <li class="p-2">
-        <a href="/sensors/list" class="align-items-center text-decoration-none menu-option">
-            <span class="ms-2"><i class="fa-solid fa-droplet"></i></span> Wilgotność
+    <li class="p-2">
+        <a href="/sensors/motion/list" class="align-items-center text-decoration-none menu-option">
+            <span class="ms-2"><i class="fa-solid fa-person-walking"></i></span> Czujniki ruchu
         </a>
-    </li> -->
+    </li>
+    <h6> Ustawienia </h6>
+    <li class="p-2">
+        <a href="/settings/general" class="align-items-center text-decoration-none menu-option">
+            <span class="ms-2"><i class="fa-solid fa-gear"></i></span> Ustawienia systemu
+        </a>
+    </li>
 </ul>

@@ -42,13 +42,12 @@ main {
 }
 
 .row {
-    height: 100%;
     margin-left: 0;
     margin-right: 0; 
 }
   
 .menu {
-    height: 100vh;
+    height: auto;
     padding: 0;
     background-color: white;
     border-top-right-radius: 10px;
@@ -60,7 +59,11 @@ main {
     color:#7a878e;
 }
 
-.pink-hover a:hover {  
+.menu-option:hover {
+    color: #C31C4A !important;
+}
+
+.menu li a:hover i {
     color: #C31C4A !important;
 }
 
