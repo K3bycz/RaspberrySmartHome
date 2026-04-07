@@ -22,4 +22,13 @@
             <span class="ms-2"><i class="fa-solid fa-gear"></i></span> Ustawienia systemu
         </a>
     </li>
+    <li class="p-2">
+        <a href="#" class="align-items-center text-decoration-none menu-option" 
+        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <span class="ms-2"><i class="fa fa-sign-out-alt"></i></span> Wyloguj
+        </a>
+        <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display:none;">
+            @csrf
+        </form>
+    </li>
 </ul>
