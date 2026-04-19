@@ -14,6 +14,9 @@ class User extends Model
         'name',
         'email',
         'password',
+        'location_lat',
+        'location_lon',
+        'location_name',
     ];
 
     // Ukryj hasło przy serializacji do JSON/array

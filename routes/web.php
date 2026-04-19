@@ -6,6 +6,7 @@ use App\Http\Controllers\SensorController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\WeatherController;
 
 // Autentykacja
 Route::get('/login',    [LoginController::class, 'showLoginForm'])->name('login');
@@ -30,6 +31,10 @@ Route::middleware(\App\Http\Middleware\AuthMiddleware::class)->group(function ()
 
     // Ustawienia
     Route::get('/settings/general', [SettingsController::class, 'generalSettings'])->name('settings.general');
+    Route::post('/settings/save-location', [SettingsController::class, 'saveLocation'])->name('settings.saveLocation');
+
+    // API pogodowe
+    Route::get('/api/weather', [WeatherController::class, 'current'])->name('weather.current');
 
 });
 
