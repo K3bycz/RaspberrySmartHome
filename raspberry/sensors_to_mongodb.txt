@@ -1,4 +1,0 @@
-admin
-kurczak1234
-
-mongodb+srv://admin:kurczak1234@inzynierka.mcehlvv.mongodb.net/?appName=Inzynierka

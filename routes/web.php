@@ -7,6 +7,7 @@ use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\BulbApiController;
 
 // Autentykacja
 Route::get('/login',    [LoginController::class, 'showLoginForm'])->name('login');
@@ -15,6 +16,10 @@ Route::post('/logout',  [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/register', [RegisterController::class, 'showRegisterForm'])->name('register');
 Route::post('/register',[RegisterController::class, 'register'])->name('register.post');
+
+// API pogodowe
+Route::get('/api/weather', [WeatherController::class, 'current'])->name('weather.current');
+
 
 // Trasy dostepne po zalogwaniu
 Route::middleware(\App\Http\Middleware\AuthMiddleware::class)->group(function () {
@@ -33,8 +38,15 @@ Route::middleware(\App\Http\Middleware\AuthMiddleware::class)->group(function ()
     Route::get('/settings/general', [SettingsController::class, 'generalSettings'])->name('settings.general');
     Route::post('/settings/save-location', [SettingsController::class, 'saveLocation'])->name('settings.saveLocation');
 
-    // API pogodowe
-    Route::get('/api/weather', [WeatherController::class, 'current'])->name('weather.current');
+    // API żarówek
+    Route::prefix('bulbs')->name('bulbs.')->group(function () {
+        Route::get ('status',     [BulbApiController::class, 'status'])     ->name('status');
+        Route::post('on',         [BulbApiController::class, 'on'])         ->name('on');
+        Route::post('off',        [BulbApiController::class, 'off'])        ->name('off');
+        Route::post('color',      [BulbApiController::class, 'color'])      ->name('color');
+        Route::post('brightness', [BulbApiController::class, 'brightness']) ->name('brightness');
+        Route::post('white',      [BulbApiController::class, 'white'])      ->name('white');
+    });
 
 });
 
