@@ -12,7 +12,7 @@
     <div class="row g-3">
 
         <div class="col-12 col-md-2">
-            <div class="card shadow-sm mb-4">
+            <div class="card shadow-sm">
                 <div class="card-body py-3">
                     <div class="clock-wrapper">
                         <div>
